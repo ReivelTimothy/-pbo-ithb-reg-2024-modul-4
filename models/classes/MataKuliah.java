@@ -38,7 +38,7 @@ public class MataKuliah {
 
     @Override
     public String toString() {
-        return "- nama Matakuliah     : " + nama + "\n" +
+        return " - nama Matakuliah     : " + nama + "\n" +
                 " - kode                : " + kode + "\n" +
                 " - SKS                 : " + SKS;
     }

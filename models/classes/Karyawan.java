@@ -9,7 +9,7 @@ public class Karyawan extends Staff {
 
     public Karyawan(String nama, String alamat, Date tTL, String telepon, String nIK, double gaji,
             List<PresensiStaff> listPresensiStaff) {
-        super(nama, alamat, tTL, telepon, nIK, gaji);
+        super(nama, alamat, tTL, telepon, nIK);
         this.gaji = gaji;
         this.listPresensiStaff = listPresensiStaff;
     }

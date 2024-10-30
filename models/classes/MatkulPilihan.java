@@ -22,7 +22,7 @@ public class MatkulPilihan extends MataKuliah {
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "\nminMhs          : " + minMhs + "\n";
+                " - min Mahasiswa       : " + minMhs + "\n";
 
     }
 

@@ -1,5 +1,6 @@
 package models;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,11 +62,11 @@ public class DataDummy {
 
         // Data dummy staff ----
         // Data dummy untuk kelas Dosen
-        Staff dosentetap1 = new DosenTetap(null, null, null, null, null, 0, null, listMatkulAjar, 0);
+        Staff dosentetap1 = new DosenTetap("rafael", "taman rahayu 3", new Date(System.currentTimeMillis()), "082310419", "019238421", 10000, "informatika", listMatkulAjar, 0);
         Staff dosenHonorer1 = new DosenHonorer(null, null, null, null, null, 0, null, listMatkulAjar, 0);
 
         // Data dummyKaryawan
-        Staff karyawan1 = new Karyawan(null, null, null, null, null, 0, listPresensiStaff);
+        Staff karyawan1 = new Karyawan("ruben", null, null, null, null, 0, listPresensiStaff);
         Staff karyawan2 = new Karyawan(null, null, null, null, null, 0, listPresensiStaff);
 
         // taru di satu list datanya 

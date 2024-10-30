@@ -31,8 +31,8 @@ public class MatkulAjar {
 
     @Override
     public String toString() {
-        return "\npresensiStaff   : " + presensiStaff + "\n" +
-                "mataKuliah      : \n" + mataKuliah.toString() + "\n" ;
+        return  "\n\nmataKuliah     : \n" + mataKuliah.toString() +
+                "\npresensiStaff   : " + presensiStaff.toString();
 
     }
 

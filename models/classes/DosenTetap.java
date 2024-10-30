@@ -23,7 +23,7 @@ public class DosenTetap extends Dosen {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" +
+        return super.toString()  +
                 "Gaji        : " + gaji + "\n";
     }
 

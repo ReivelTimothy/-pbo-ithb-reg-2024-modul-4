@@ -6,10 +6,10 @@ import java.util.ArrayList;
 public class Dosen extends Staff {
     private String departemen;
     private ArrayList<MatkulAjar> listMataKuliah = new ArrayList<>();
-        
+
     public Dosen(String nama, String alamat, Date tTL, String telepon, String nIK, double gaji, String departemen,
-            ArrayList<MatkulAjar> listMataKuliah) {
-        super(nama, alamat, tTL, telepon, nIK, gaji);
+                 ArrayList<MatkulAjar> listMataKuliah) {
+        super(nama, alamat, tTL, telepon, nIK);
         this.departemen = departemen;
         this.listMataKuliah = listMataKuliah;
     }
@@ -34,10 +34,10 @@ public class Dosen extends Staff {
     public String toString() {
         return super.toString() +
                 "departemen          : " + departemen + "\n" +
-                "listMataKuliah      : " + listMataKuliah + "\n" +
-                "NIK                 : " + getNIK() + "\n" +
-                "Gaji                : " + getGaji() + "\n";
+                "NIK                  : " + getNIK() + "\n" +
+                "listMataKuliah      : \n" + listMataKuliah.toString() + "\n"
+                ;
     }
 
-    
+
 }

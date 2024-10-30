@@ -32,7 +32,7 @@ public class Presensi {
     @Override
     public String toString() {
         return "\n     - tanggal         : " + tanggal + "\n" +
-                "     - status          : " + status + "\n" ;
+                "     - status          : " + status ;
 
     }
 

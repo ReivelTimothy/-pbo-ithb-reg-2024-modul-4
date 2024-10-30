@@ -24,8 +24,7 @@ public class PresensiStaff extends Presensi {
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "jam             : " + jam + "\n" +
-                "getJam()        : " + getJam();
+                "     - jam             : " + jam + "\n" ;
     }
 
 }
