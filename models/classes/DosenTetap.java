@@ -26,8 +26,5 @@ public class DosenTetap extends Dosen {
         return super.toString()  +
                 "Gaji        : " + gaji + "\n";
     }
-
-    
-
     
 }

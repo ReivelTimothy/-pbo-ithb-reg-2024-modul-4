@@ -28,9 +28,9 @@ public class DataDummy {
 
         // Data dummy untuk kelas PresensiStaff
         PresensiStaff presensiStaff1 = new PresensiStaff(new java.sql.Date(System.currentTimeMillis()),
-                StatusKehadiran.ALPHA, null);
+                StatusKehadiran.ALPHA, 2);
         PresensiStaff presensiStaff2 = new PresensiStaff(new java.sql.Date(System.currentTimeMillis()),
-                StatusKehadiran.HADIR, null);
+                StatusKehadiran.HADIR, 2);
         List<PresensiStaff> listPresensiStaff = new ArrayList<>();
         listPresensiStaff.add(presensiStaff1);
         listPresensiStaff.add(presensiStaff2);
@@ -51,13 +51,13 @@ public class DataDummy {
 
         // Data dummy Mahasiswa ----
         // Data dummy untuk kelas MhsSarjana
-        Mhs mahsSarjana1 = new MhsSarjana("Reivel", null, null, null, null, null, listMataKuliahAmbil);
+        Mhs mahsSarjana1 = new MhsSarjana("Reivel", null, null, null, "1123010", null, listMataKuliahAmbil);
 
         // Data dummy untuk kelas MhsMagister
-        Mhs mhsMagister1 = new MhsMagister(null, null, null, null, null, null, listMataKuliahAmbil, null);
+        Mhs mhsMagister1 = new MhsMagister(null, null, null, null, "1123010", null, listMataKuliahAmbil, null);
 
         // Data dummy untuk kelas MhsDoktor
-        Mhs mhsDoktor1 = new MhsDoktor(null, null, null, null, null, null, null, null);
+        Mhs mhsDoktor1 = new MhsDoktor(null, null, null, null, null, "1123010", null, null);
 
 
         // Data dummy staff ----

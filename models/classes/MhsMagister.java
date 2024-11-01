@@ -3,25 +3,13 @@ package models.classes;
 import java.sql.Date;
 import java.util.ArrayList;
 
-public class MhsMagister extends Mhs {
-    private ArrayList<MatkulAmbil> listMataKuliah = new ArrayList<>();
+public class MhsMagister extends MhsSarjana {
     private String judulPeneletianTesis;
 
-    
 
-    public MhsMagister(String nama, String alamat, Date tTL, String telepon, String nim, String jurusan,
-            ArrayList<MatkulAmbil> listMataKuliah, String judulPeneletianTesis) {
-        super(nama, alamat, tTL, telepon, nim, jurusan);
-        this.listMataKuliah = listMataKuliah;
+    public MhsMagister(String nama, String alamat, Date tTL, String telepon, String nim, String jurusan, ArrayList<MatkulAmbil> mataKuliah, String judulPeneletianTesis) {
+        super(nama, alamat, tTL, telepon, nim, jurusan, mataKuliah);
         this.judulPeneletianTesis = judulPeneletianTesis;
-    }
-
-    public ArrayList<MatkulAmbil> getMataKuliah() {
-        return listMataKuliah;
-    }
-
-    public void setMataKuliah(ArrayList<MatkulAmbil> listMataKuliah) {
-        this.listMataKuliah = listMataKuliah;
     }
 
     public String getJudulPeneletianTesis() {
@@ -34,15 +22,9 @@ public class MhsMagister extends Mhs {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" +
-                "listMataKuliah             : " + listMataKuliah + "\n" +
-                "judulPenelitianTesis       : " + judulPeneletianTesis + "\n" +
-                "getJudulPeneletianTesis    : " + getJudulPeneletianTesis() + "\n" +
-                "getMataKuliah              : " + getMataKuliah();
+        return "judulPenelitianTesis       : " + judulPeneletianTesis + "\n" +
+                super.toString();
     }
-
-
-
 
 
 }
